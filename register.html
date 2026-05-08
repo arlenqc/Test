@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar - NeCoffee</title>
+    <link rel="icon" href="img/necoffee.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="auth-page">
+
+    <div class="auth-container">
+        <!-- Kiri: Visual -->
+        <div class="auth-visual reg-visual">
+            <div class="auth-visual-bg"></div>
+            <div class="auth-visual-content">
+                <a href="index.html" class="nav-brand auth-brand">
+                    <img src="img/necoffee.jpg" alt="NeCoffee" class="brand-icon">
+                    <span class="brand-text">NeCoffee</span>
+                </a>
+                <h2>Bergabung Bersama Kami</h2>
+                <p>Daftar sekarang dan raih berbagai keistimewaan sebagai anggota NeCoffee.</p>
+                <ul class="auth-perks">
+                    <li><i class="fas fa-gift"></i> Voucher selamat datang</li>
+                    <li><i class="fas fa-star"></i> Akses menu spesial</li>
+                    <li><i class="fas fa-crown"></i> Status member premium</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Kanan: Form -->
+        <div class="auth-form-side">
+            <div class="auth-form-box">
+                <div class="auth-mobile-brand">
+                    <a href="index.html" class="nav-brand">
+                        <img src="img/necoffee.jpg" alt="NeCoffee" class="brand-icon">
+                        <span class="brand-text">NeCoffee</span>
+                    </a>
+                </div>
+                <h2 class="auth-heading">Buat Akun Baru</h2>
+                <p class="auth-subheading">Isi data di bawah untuk mendaftar</p>
+
+                <form id="registerForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="regNama">Nama Lengkap</label>
+                        <div class="input-icon">
+                            <i class="fas fa-id-card"></i>
+                            <input type="text" id="regNama" placeholder="Masukkan nama lengkap" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="regUser">Username</label>
+                        <div class="input-icon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="regUser" placeholder="Pilih username unik" required autocomplete="username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="regEmail">Email</label>
+                        <div class="input-icon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="regEmail" placeholder="Masukkan email aktif" required autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="regPass">Password</label>
+                        <div class="input-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="regPass" placeholder="Minimal 6 karakter" required autocomplete="new-password">
+                            <button type="button" class="eye-btn" data-target="regPass" aria-label="Lihat password"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <div class="pw-strength"><div class="pw-bar" id="pwBar"></div></div>
+                        <small class="pw-text" id="pwText"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="regConfirm">Konfirmasi Password</label>
+                        <div class="input-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="regConfirm" placeholder="Ulangi password" required autocomplete="new-password">
+                            <button type="button" class="eye-btn" data-target="regConfirm" aria-label="Lihat password"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div id="regMsg" class="form-msg"></div>
+                    <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-user-plus"></i> Daftar Sekarang</button>
+                </form>
+
+                <p class="auth-switch">Sudah punya akun? <a href="login.html">Masuk di sini</a></p>
+                <a href="index.html" class="auth-back"><i class="fas fa-arrow-left"></i> Kembali ke Beranda</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-wrap" id="toastWrap"></div>
+    <script src="js/app.js"></script>
+</body>
+</html>
