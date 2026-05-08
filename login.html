@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk - NeCoffee</title>
+    <link rel="icon" href="img/necoffee.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="auth-page">
+
+    <div class="auth-container">
+        <!-- Kiri: Visual -->
+        <div class="auth-visual">
+            <div class="auth-visual-bg"></div>
+            <div class="auth-visual-content">
+                <a href="index.html" class="nav-brand auth-brand">
+                    <img src="img/necoffee.jpg" alt="NeCoffee" class="brand-icon">
+                    <span class="brand-text">NeCoffee</span>
+                </a>
+                <h2>Selamat Datang Kembali</h2>
+                <p>Masuk ke akunmu dan nikmati promo eksklusif, poin reward, serta menu spesial anggota.</p>
+                <ul class="auth-perks">
+                    <li><i class="fas fa-check-circle"></i> Promo anggota setiap minggu</li>
+                    <li><i class="fas fa-check-circle"></i> Kumpulkan poin setiap pembelian</li>
+                    <li><i class="fas fa-check-circle"></i> Akses menu eksklusif</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Kanan: Form -->
+        <div class="auth-form-side">
+            <div class="auth-form-box">
+                <div class="auth-mobile-brand">
+                    <a href="index.html" class="nav-brand">
+                        <img src="img/necoffee.jpg" alt="NeCoffee" class="brand-icon">
+                        <span class="brand-text">NeCoffee</span>
+                    </a>
+                </div>
+                <h2 class="auth-heading">Masuk ke Akun</h2>
+                <p class="auth-subheading">Silakan masukkan username dan passwordmu</p>
+
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="loginUser">Username</label>
+                        <div class="input-icon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="loginUser" placeholder="Masukkan username" required autocomplete="username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPass">Password</label>
+                        <div class="input-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="loginPass" placeholder="Masukkan password" required autocomplete="current-password">
+                            <button type="button" class="eye-btn" data-target="loginPass" aria-label="Lihat password"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div id="loginMsg" class="form-msg"></div>
+                    <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-sign-in-alt"></i> Masuk</button>
+                </form>
+
+                <p class="auth-switch">Belum punya akun? <a href="register.html">Daftar sekarang</a></p>
+                <a href="index.html" class="auth-back"><i class="fas fa-arrow-left"></i> Kembali ke Beranda</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-wrap" id="toastWrap"></div>
+    <script src="js/app.js"></script>
+</body>
+</html>
